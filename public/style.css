@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,400&display=swap');
+
+:root {
+  --color-dark-theme: #282a36;
+  --color-card: #7159c1;
+  --color-text: #161b3d;
+  --color-body: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-body);
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: var(--color-text);
+}
+
+/* O header precisa ter um espaçamento
+ interno de 30px em todas as direções */
+header {  
+padding: 100px 30px 30px 30px;
+border-bottom: 1px ;
+}
+
+/* Os links devem ter um espaçamento
+ de 30px entre si */
+header div a {
+  padding: 30px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header div img {
+  height: 60px;
+}
+
+/*#wrapper{
+  padding: 32px;
+}
+*/
+#wrapper img {
+  border-radius: 50%;
+  height: 300px;
+  margin-bottom: 15px;
+}
+
+#wrapper h1 {
+  font-size: 42px;
+  line-height: 52px;
+  font-weight: bold;
+}
+
+#wrapper h2 {
+  font-size: 28px;
+  line-height: 32px;
+  margin-top: 8px;
+}
+
+#wrapper p {
+  margin-top: 8px;
+}
+
+#wrapper ul{
+  margin-top: 8px;
+  list-style: none;
+}
+
+#wrapper ul li {
+  margin: 5px;
+}
+
+footer {
+  padding: 20px;
+}
+
+footer div a {
+  text-decoration: none;
+  padding: 20px;
+  color: rgb(117, 117, 117);
+  opacity: 0.8;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+footer div a:hover {
+  color: black;
+}
+
+/* =====CARDS===== */
+
+.cards {
+  max-width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.card {
+  background-color: var(--color-card);
+  border-radius: 20px;
+}
+
+.card-image img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.card-Conteudo,
+.card-info {
+  padding: 20px;
+  color: #fff;
+  border-radius: 30px;
+
+  font-weight: bold;
+}
+
+/*.card-info {
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+*/
